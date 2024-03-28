@@ -8,5 +8,29 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <script defer src="/js/script.js"></script>
   </head>
-  <body></body>
+  <body class="container">
+    <div class="grid grid-col-2">
+      <div class="col-1-inner">
+        <div class="card"></div>
+      </div>
+      <div class="col-2-inner">
+        <div class="input">
+          <div class="input-wrapper">
+            <label id="scale-label">Scale: 0</label>
+            <input type="range" class="input-scale" />
+          </div>
+          <div class="input-wrapper">
+            <label id="rotate-label">Rotate: 0</label>
+            <input
+              type="range"
+              class="input-rotate"
+              min="0"
+              max="360"
+              value="0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
