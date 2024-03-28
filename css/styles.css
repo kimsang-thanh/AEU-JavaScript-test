@@ -3,12 +3,13 @@
 } */
 
 .container {
+  min-height: 100vh;
   background-color: #777;
   background-image: linear-gradient(to right bottom, #66d9e8, #1098ad);
 }
 
 :where(.col-1-inner, .col-2-inner) {
-  height: 100vh;
+  height: calc(100vh - 60px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,9 +17,10 @@
 
 .card {
   width: 200px;
-  height: 150px;
+  height: 180px;
   background-color: #f783ac;
   border-radius: 20px;
+  transition: all 0.3s;
 }
 
 .input {
@@ -29,6 +31,13 @@
 
 .input-wrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 10px;
+}
+
+.input-wrapper :where(label) {
+  align-self: flex-start;
+  font-size: 2rem;
+  color: white;
 }
