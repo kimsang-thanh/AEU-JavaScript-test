@@ -10,6 +10,9 @@ html {
 }
 
 :root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+
   /* COLOR GRAY */
   --color-gray-50: #f8f9fa;
   --color-gray-100: #f1f3f5;
@@ -70,7 +73,7 @@ html {
   --color-violet-800: #6741d9;
   --color-violet-900: #5f3dc4;
 
-  /* COLOR INIGO */
+  /* COLOR INDIGO */
   --color-indigo-50: #edf2ff;
   --color-indigo-100: #dbe4ff;
   --color-indigo-200: #bac8ff;
@@ -154,7 +157,7 @@ html {
   --color-yellow-800: #f08c00;
   --color-yellow-900: #e67700;
 
-  /* COLOR​ ORANGE*/
+  /* COLOR​ ORANGE */
   --color-orange-50: #fff4e6;
   --color-orange-100: #ffe8cc;
   --color-orange-200: #ffd8a8;
@@ -165,6 +168,14 @@ html {
   --color-orange-700: #f76707;
   --color-orange-800: #e8590c;
   --color-orange-900: #d9480f;
+
+  /* BORDER RADIUS */
+  --round-sm: 0.2rem;
+  --rounded: 0.4rem;
+  --round-md: 0.6rem;
+  --round-lg: 1rem;
+  --round-xl: 1.6rem;
+  --round-full: 50%;
 }
 
 .grid {

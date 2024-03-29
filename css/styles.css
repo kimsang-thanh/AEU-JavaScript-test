@@ -8,6 +8,14 @@
 }
 
 :where(.transform-section, .radius-section) {
+  --gradient-1: var(--color-cyan-300, --color-white);
+  --gradient-2: var(--color-cyan-700, --color-white);
+
+  background-image: linear-gradient(
+    to right bottom,
+    var(--gradient-1),
+    var(--gradient-2)
+  );
   height: 100vh;
 }
 
@@ -18,37 +26,39 @@
 }
 
 .transform-section {
-  background-image: linear-gradient(to right bottom, #66d9e8, #1098ad);
+  --gradient-1: var(--color-violet-300);
+  --gradient-2: var(--color-violet-700);
 }
 
 .radius-section {
-  background-image: linear-gradient(to right bottom, #66d9e8, #1098ad);
+  --gradient-1: var(--color-pink-300);
+  --gradient-2: var(--color-pink-700);
 }
 
 .card {
   --bg-color: rgb(255, 255, 255);
 
-  width: 200px;
-  height: 200px;
+  width: 24rem;
+  height: 24rem;
   background-color: var(--bg-color);
   border-radius: 20px;
-  transition: all 0.3s;
+  transition: transform 500ms cubic-bezier(0.3, 0.93, 0.87, 0.24);
 }
 
 .card-1 {
-  --bg-color: rgb(77, 170, 247);
+  --bg-color: var(--color-white);
 }
 
 .card-2 {
   /* --bg-color: rgb(247, 131, 172); */
 
-  --bg-color: var(--color-gray-900);
+  --bg-color: var(--color-indigo-900);
 }
 
 .input {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 1rem;
 }
 
 .input-wrapper {
@@ -56,7 +66,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .input-wrapper :where(label) {
@@ -66,7 +76,7 @@
 }
 
 .input-wrapper :where(input) {
-  width: 300px;
+  width: 30rem;
 }
 
 /* card 2 */
@@ -85,4 +95,81 @@
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
+}
+
+.col-2-inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.4rem;
+}
+
+/* CODE PANNEL SECTION */
+
+.code {
+  border-radius: var(--rounded);
+  background-color: var(--color-gray-900);
+  width: 52rem;
+  height: 20rem;
+  padding: 1.4rem 1.6rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.code :where(.code-btn-option) {
+  display: flex;
+  column-gap: 0.8rem;
+}
+
+:where(.code-btn-option) .code-btn {
+  --bg-color: var(--color-white);
+
+  background-color: var(--bg-color);
+  border-radius: var(--round-full);
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.code-btn-1 {
+  --bg-color: var(--color-red-600);
+}
+
+.code-btn-2 {
+  --bg-color: var(--color-yellow-500);
+}
+
+.code-btn-3 {
+  --bg-color: var(--color-green-600);
+}
+
+.code-content {
+  font-size: 1.8rem;
+  padding: 1.2rem 0;
+}
+
+.code-content :where(.selector) {
+  display: flex;
+  flex-direction: column;
+}
+
+.selector-name {
+  color: var(--color-yellow-600);
+  opacity: 0.8;
+}
+
+.curly-bracket {
+  color: var(--color-yellow-400);
+}
+
+.properties {
+  padding-left: 1.2rem;
+}
+
+.property {
+  font-size: 1.6rem;
+  color: var(--color-blue-200);
+}
+
+.transform-value {
+  color: var(--color-green-200);
 }
