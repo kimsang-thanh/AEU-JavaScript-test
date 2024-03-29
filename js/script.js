@@ -5,7 +5,7 @@ const rotateLabel = document.querySelector("#rotate-label");
 const card = document.querySelector(".card");
 const obj = {
   rotate: 0,
-  scale: 1,
+  scale: 0,
 };
 
 function rotateCard(e) {
@@ -13,7 +13,7 @@ function rotateCard(e) {
   obj.rotate = value;
 
   rotateLabel.textContent = `Rotate ${value}`;
-  card.style.transform = `rotate(${value}deg) scale(${obj.scale})`;
+  card.style.transform = `rotate(${value}deg) scale(${obj.scale / 100})`;
 }
 
 function scalecard(e) {
@@ -21,7 +21,7 @@ function scalecard(e) {
 
   const calcValue = value / 100;
 
-  obj.scale = calcValue;
+  obj.scale = value;
 
   scaleLabel.textContent = `Scale ${calcValue}`;
   card.style.transform = `scale(${calcValue}) rotate(${obj.rotate}deg)`;
