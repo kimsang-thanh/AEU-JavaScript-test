@@ -7,18 +7,21 @@
   background-color: #777;
 }
 
+:where(.transform-section, .radius-section) {
+  height: 100vh;
+}
+
 :where(.col-1-inner, .col-2-inner) {
-  /* height: calc(100vh - 60px); */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.card-container-1 {
+.transform-section {
   background-image: linear-gradient(to right bottom, #66d9e8, #1098ad);
 }
 
-.card-container-2 {
+.radius-section {
   background-image: linear-gradient(to right bottom, #66d9e8, #1098ad);
 }
 
