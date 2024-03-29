@@ -9,6 +9,11 @@ html {
   font-family: system-ui;
 }
 
+:root {
+  --color-gray-50: #f8f9fa;
+  --color-gray-100: #f1f3f5;
+}
+
 .grid {
   display: grid;
 }

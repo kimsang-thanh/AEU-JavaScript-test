@@ -3,24 +3,41 @@
 } */
 
 .container {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-color: #777;
-  background-image: linear-gradient(to right bottom, #66d9e8, #1098ad);
 }
 
 :where(.col-1-inner, .col-2-inner) {
-  height: calc(100vh - 60px);
+  /* height: calc(100vh - 60px); */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.card-container-1 {
+  background-image: linear-gradient(to right bottom, #66d9e8, #1098ad);
+}
+
+.card-container-2 {
+  background-image: linear-gradient(to right bottom, #66d9e8, #1098ad);
+}
+
 .card {
+  --bg-color: rgb(255, 255, 255);
+
   width: 200px;
-  height: 180px;
-  background-color: #f783ac;
+  height: 200px;
+  background-color: var(--bg-color);
   border-radius: 20px;
   transition: all 0.3s;
+}
+
+.card-1 {
+  --bg-color: rgb(77, 170, 247);
+}
+
+.card-2 {
+  --bg-color: rgb(247, 131, 172);
 }
 
 .input {
@@ -50,7 +67,7 @@
 /* card 2 */
 
 .card-2 {
-  margin-bottom: 10rem;
+  /* margin-bottom: 10rem; */
 }
 
 .card-box {

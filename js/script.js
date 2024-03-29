@@ -5,7 +5,7 @@ const rotateLabel = document.querySelector("#rotate-label");
 const card = document.querySelector(".card");
 const obj = {
   rotate: 0,
-  scale: 0,
+  scale: 100,
 };
 
 function rotateCard(e) {
