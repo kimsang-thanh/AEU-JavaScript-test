@@ -40,7 +40,9 @@
 }
 
 .card-2 {
-  --bg-color: rgb(247, 131, 172);
+  /* --bg-color: rgb(247, 131, 172); */
+
+  --bg-color: var(--color-gray-900);
 }
 
 .input {
