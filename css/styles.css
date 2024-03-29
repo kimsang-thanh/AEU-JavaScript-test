@@ -47,7 +47,11 @@
   width: 300px;
 }
 
-/*   */
+/* card 2 */
+
+.card-2 {
+  margin-bottom: 10rem;
+}
 
 .card-box {
   display: flex;
